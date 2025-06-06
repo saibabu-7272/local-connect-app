@@ -1,0 +1,92 @@
+import React from "react";
+
+
+const LocalConnectContext = React.createContext({
+  services : [
+  { "service_id": 1, "service_name": "Electrician" },
+  { "service_id": 2, "service_name": "Plumber" },
+  { "service_id": 3, "service_name": "Carpenter" },
+  { "service_id": 4, "service_name": "Painter" },
+  { "service_id": 5, "service_name": "AC Repair & Installation" },
+  { "service_id": 6, "service_name": "Refrigerator & Washing Machine Repair" },
+  { "service_id": 7, "service_name": "CCTV Installation" },
+  { "service_id": 8, "service_name": "TV & Home Theatre Repair" },
+  { "service_id": 9, "service_name": "Computer & Laptop Repair" },
+  { "service_id": 10, "service_name": "Mobile Repair" },
+  { "service_id": 11, "service_name": "House Cleaning" },
+  { "service_id": 12, "service_name": "Bathroom Cleaning" },
+  { "service_id": 13, "service_name": "Water Tank Cleaning" },
+  { "service_id": 14, "service_name": "Pest Control" },
+  { "service_id": 15, "service_name": "Cooking/Chef Services" },
+  { "service_id": 16, "service_name": "Home Tutor" },
+  { "service_id": 17, "service_name": "Tailoring" },
+  { "service_id": 18, "service_name": "Beauty Parlour at Home" },
+  { "service_id": 19, "service_name": "Mehndi Artist" },
+  { "service_id": 20, "service_name": "Barber at Home" },
+  { "service_id": 21, "service_name": "Driver on Demand" },
+  { "service_id": 22, "service_name": "Gardening" },
+  { "service_id": 23, "service_name": "Laundry & Ironing" },
+  { "service_id": 24, "service_name": "Event Decoration (Marriage/Birthday)" },
+  { "service_id": 25, "service_name": "DJ & Sound System" },
+  { "service_id": 26, "service_name": "Photographer/Videographer" },
+  { "service_id": 27, "service_name": "Domestic Help / Maid" },
+  { "service_id": 28, "service_name": "Car Wash (at doorstep)" },
+  { "service_id": 29, "service_name": "Bike Mechanic (Mobile)" },
+  { "service_id": 30, "service_name": "Car Mechanic" },
+  { "service_id": 31, "service_name": "Milk Delivery" },
+  { "service_id": 32, "service_name": "Vegetable Vendor" },
+  { "service_id": 33, "service_name": "Grocery Delivery" },
+  { "service_id": 34, "service_name": "Physiotherapist at Home" },
+  { "service_id": 35, "service_name": "Yoga Trainer" },
+  { "service_id": 36, "service_name": "Dance Teacher" },
+  { "service_id": 37, "service_name": "Music Teacher" },
+  { "service_id": 38, "service_name": "Pet Grooming" },
+  { "service_id": 39, "service_name": "Tuition for Competitive Exams" },
+  { "service_id": 40, "service_name": "Spoken English Trainer" }
+],
+states : [
+  { "state_id": 1, "state_name": "Andhra Pradesh" },
+  { "state_id": 2, "state_name": "Karnataka" },
+  { "state_id": 3, "state_name": "Maharashtra" },
+  { "state_id": 4, "state_name": "Tamil Nadu" }
+],
+districts : [
+  { "district_id": 100, "district_name": "Guntur", "state_id": 1 },
+  { "district_id": 101, "district_name": "Krishna", "state_id": 1 },
+  { "district_id": 102, "district_name": "Bengaluru Urban", "state_id": 2 },
+  { "district_id": 103, "district_name": "Mysuru", "state_id": 2 },
+  { "district_id": 104, "district_name": "Mumbai Suburban", "state_id": 3 },
+  { "district_id": 105, "district_name": "Pune", "state_id": 3 },
+  { "district_id": 106, "district_name": "Chennai", "state_id": 4 },
+  { "district_id": 107, "district_name": "Coimbatore", "state_id": 4 }
+],
+cities : [
+  { "city_id": 1000, "city_name": "Guntur", "district_id": 100 },
+  { "city_id": 1001, "city_name": "Tenali", "district_id": 100 },
+  { "city_id": 1002, "city_name": "Mangalagiri", "district_id": 100 },
+  { "city_id": 1003, "city_name": "Vijayawada", "district_id": 101 },
+  { "city_id": 1004, "city_name": "Machilipatnam", "district_id": 101 },
+  { "city_id": 1005, "city_name": "Nuzvid", "district_id": 101 },
+  { "city_id": 1006, "city_name": "Bengaluru", "district_id": 102 },
+  { "city_id": 1007, "city_name": "Yelahanka", "district_id": 102 },
+  { "city_id": 1008, "city_name": "Whitefield", "district_id": 102 },
+  { "city_id": 1009, "city_name": "Mysore", "district_id": 103 },
+  { "city_id": 1010, "city_name": "Nanjangud", "district_id": 103 },
+  { "city_id": 1011, "city_name": "T. Narasipura", "district_id": 103 },
+  { "city_id": 1012, "city_name": "Andheri", "district_id": 104 },
+  { "city_id": 1013, "city_name": "Bandra", "district_id": 104 },
+  { "city_id": 1014, "city_name": "Borivali", "district_id": 104 },
+  { "city_id": 1015, "city_name": "Pune", "district_id": 105 },
+  { "city_id": 1016, "city_name": "Shivajinagar", "district_id": 105 },
+  { "city_id": 1017, "city_name": "Hinjewadi", "district_id": 105 },
+  { "city_id": 1018, "city_name": "Chennai", "district_id": 106 },
+  { "city_id": 1019, "city_name": "T. Nagar", "district_id": 106 },
+  { "city_id": 1020, "city_name": "Velachery", "district_id": 106 },
+  { "city_id": 1021, "city_name": "Coimbatore", "district_id": 107 },
+  { "city_id": 1022, "city_name": "Pollachi", "district_id": 107 },
+  { "city_id": 1023, "city_name": "Mettupalayam", "district_id": 107 }
+]
+
+})
+
+export default LocalConnectContext

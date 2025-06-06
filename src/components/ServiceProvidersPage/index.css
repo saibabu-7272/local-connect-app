@@ -1,0 +1,48 @@
+.service-providers-page{
+    min-height:100vh;
+    background-image: linear-gradient(to right, rgb(2, 2, 58),rgb(2, 88, 84), rgb(2, 2, 58));
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.service-provider-container{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.service-provider-card{
+    padding:20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(2, 88, 84);
+    color:#ffffff;
+    border:1px solid #ffffff;
+}
+.flex-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.provider-card-icons{
+    font-size: 24px;
+    margin-right: 10px;
+    color: yellow;
+}
+.no-margin{
+    margin:0px;
+}
+.person-icon{
+    font-size: 32px;
+}
+.not-found-container{
+    color: #ffffff;
+    margin: auto;
+    text-align: center;
+}
+.not-found-msg{
+    color:#ffffff;
+    font-size: 24px;
+    margin:auto;
+}

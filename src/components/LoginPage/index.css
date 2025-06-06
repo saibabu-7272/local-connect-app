@@ -1,0 +1,112 @@
+.login-page{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+    background-image: linear-gradient(to right, rgb(2, 2, 58),rgb(2, 88, 84), rgb(2, 2, 58));
+    padding:10px;
+}
+.login-card{
+    background-color: aliceblue;
+    padding:20px;
+    border-radius: 5px;
+    border:1px solid yellow;
+    background-color:rgb(2, 2, 58);
+    color:#fff;
+
+}
+.form-container{
+    display: flex;
+    justify-content: space-between;
+    width:700px;
+    
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    margin-bottom: 15px;
+}
+.input-box{
+    height:46px;
+    width:300px;
+    border:none;
+    outline: none;
+    background-color: transparent;
+    border:1px solid #fff;
+    color:#fff;
+    border-radius: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+label{
+    position: absolute;
+    top:-10px;
+    margin-left:20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color:rgb(2, 2, 58);
+    color:yellow;
+    font-size: 12px;
+}
+option{
+    background-color:rgb(2, 2, 58);
+
+}
+.error-msg{
+    color:red;
+    margin:0px;
+}
+.success-msg{
+    color:green;
+}
+.submit-btn{
+    height:46px;
+    outline:none;
+    color: #fff;
+    background-color: rgb(0, 76, 216);
+    border-radius: 6px;
+    border:none;
+    margin-top:5px;
+    margin-bottom:5px;
+    width:100%;
+    font-size: 18px;
+}
+.link{
+    text-decoration: underline;
+    color:yellow;
+    cursor: pointer;
+}
+.loader {
+  border: 5px solid #f3f3f3; 
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  margin:auto;
+}
+.required-icon{
+    color:red;
+    padding-left: 2px;
+}
+.width-100{
+    width:100%
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width:786px){
+    .form-container{
+        flex-direction: column;
+        width:100%;
+    }
+    .input-box{
+        width:100%;
+    }
+}
