@@ -161,7 +161,7 @@ class LoginPage extends Component {
                                             </div>
                                             <button className="submit-btn" type="submit" >Login</button>
                                             {loginError !== "" && <p className="error-msg">{loginError}</p>}
-                                            <p >Don't have account? <span className="link" onClick={this.toggleLoginCards}>Create Here</span> </p>
+                                            <p >Don't have a account? <span className="link" onClick={this.toggleLoginCards}>Create Here</span> </p>
                                         </form>
                                     </div>
                                 :
