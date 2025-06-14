@@ -35,13 +35,20 @@ customers.
   2. Meaningful class names related to the element's content.
 
 ## Back-End:
-  ### Node JS
-  ### Express JS
+### Node JS
+### Express JS
+  1. RESTful APIs.
+  2. jsonwebtoken (JWT Token), to manage Authorization and Athentication.
+  3. bcrypt, to hash the passwords before storing in database.
+  
 ## Database:
-  ### MongoDB
-
+### MongoDB:
+  1. Mongoose
+  2. Used Schema to get control over the fields.
+  
+  
 # 3. How to use 
-   1. After logging in to Local Connect using login details, it navigate to the home(dashboard) page.
+   1. After logging in to Local Connect using login details, it navigates to the home(dashboard) page.
    2. In the home page, you can see the list of services which are avalilable in the Local Connect application, around 40 services available now.
    3. You can get the list of service providers based on the location(city) when you click on the service card.
    4. For example, assume you are from Guntur and clicked on the Plumber service card, than you can see the plumbers list in Guntur. If no plumber is registered in our application, then you will see a "NOT FOUND" message.
@@ -54,7 +61,7 @@ On the login page, you just need to fill in the two inputs, both are required
 ### 3. Next step is to click on the "Login" button.
 If the email you entered is not already registered, you will receive the following error message:
 Error: "User with this Email ID doesn't exist"
-If the password doesn't match with the email, you will receive the following error message:
+If the password doesn't match the email, you will receive the following error message:
 Error: "Incorrect password"
 NOTE: If you dont have an account, please create an account, then try log in. On the bottom, you can see a "Create here", use it to navigate Create account page. 
 
