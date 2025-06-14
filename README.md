@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+## Table of contents:
+1. App brief details
+2. Tech stack 
+3. How to use 
+4. How to log in 
+5. How to create an account
+6. All the errors
+   6.a) Login Errors
+   6.b) Errors while Creating an Account
+7. Contact Information
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 1. App brief details
+## App: LOCAL CONNECT [https://local-connect-5mxf.onrender.com/]
+A Full-stack web application that connects local service providers (electricians, plumbers) with nearby 
+customers.
+### (Working principle: A customer is a service provider and vice versa)
+### Features:
+  1. Users can create an Account and log in to Local Connect.
+  2. In the dashboard list of all services available to the users.
+  3. When the user clicks on a service then it navigates to the service providers' page, where the service providers' contact details are available; the list of service providers is rendered based on the user's location and the service that the user clicks.
 
-## Available Scripts
+# 2. Tech Stack
+## Front-End: 
+### React JS:
+  1. Component-based design, to improve reusability
+  2. Mainly used class components
+  3. Managed dynamic data in State
+  4. JSX
+  5. In Local storage/Client-side storage, cookies are used to store the JWT(JSON Web Token).
+  6. Protected Routing to only give access to the login users over application pages.
+  7. By using React context, I managed the important data throughout the application. 
+### CSS:
+  1. Flex-box, to arrange elements and achieve a clean, structured design.
+  2. Media queries, to give the styling to elements based on screen size. (Responsive design)
+### HTML5:
+  1. Semantic tags, to achieve clean and readable HTML code.
+  2. Meaningful class names related to the element's content.
 
-In the project directory, you can run:
+## Back-End:
+  ### Node JS
+  ### Express JS
+## Database:
+  ### MongoDB
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# 7. Contact Information
+  Developed by ## G Sai Babu
+  Role ## Full-Stack
+  Mail ## saibabu61242@gmail.com
